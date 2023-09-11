@@ -1,4 +1,3 @@
-"use client";
 import { useSelector } from "react-redux";
 import { Metadata } from "next";
 import { StateProps, StoreProduct } from "../../../types";
@@ -13,7 +12,7 @@ export const metadata: Metadata = {
   title: "cart",
   description: "this page all content is on your cart that you selected !",
 };
-const page = () => {
+const Cart = () => {
   const { productData } = useSelector((state: StateProps) => state.next);
   console.log(productData);
   return (
@@ -47,4 +46,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Cart;
