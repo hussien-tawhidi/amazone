@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import { createSlice } from "@reduxjs/toolkit";
 import { StoreProduct } from "../../../types";
@@ -94,6 +94,7 @@ export const nextSlice = createSlice({
     setAllProducts: (state, action) => {
       state.allProducts = action.payload;
     },
+
   },
 });
 
